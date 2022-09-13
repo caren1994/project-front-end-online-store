@@ -24,3 +24,6 @@ export async function getProductById(productId) {
   const categoria = await responseQuery.json();
   return categoria;
 }
+export function setLocal(elems) {
+  localStorage.setItem('produto', JSON.stringify(elems));
+}

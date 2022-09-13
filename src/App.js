@@ -4,6 +4,7 @@ import TelaPrincipal from './pages/TelaPrincipal';
 import Carrinho from './pages/Carrinho';
 import * as api from './services/api';
 import Card from './pages/Card';
+import Checkout from './pages/Checkout';
 
 class App extends Component {
   state = {
@@ -40,6 +41,7 @@ class App extends Component {
             path="/card/:id"
             component={ Card }
           />
+          <Route exact path="/checkout" component={ Checkout } />
         </Switch>
       </BrowserRouter>
     );
